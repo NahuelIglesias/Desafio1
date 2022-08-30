@@ -1,9 +1,27 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://resources/player.png" type="Texture" id=2]
+[ext_resource path="res://resources/background.png" type="Texture" id=3]
+[ext_resource path="res://resources/floor.png" type="Texture" id=4]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="white_background" type="TextureRect" parent="."]
+margin_left = -97.0
+margin_top = -71.0
+margin_right = 975.0
+margin_bottom = 604.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="green_floor" type="TextureRect" parent="."]
+margin_left = -125.0
+margin_top = 335.0
+margin_right = 1008.0
+margin_bottom = 612.0
+texture = ExtResource( 4 )
+expand = true
 
 [node name="player" type="Sprite" parent="."]
 texture = ExtResource( 2 )
